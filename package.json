@@ -1,7 +1,7 @@
 {
-  "name": "freeroam",
+  "name": "login",
   "version": "1.0.0",
-  "description": "",
+  "description": "AltV login system with MySQL",
   "main": "",
   "scripts": {
     "test": "tsc",
@@ -10,10 +10,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/altmp/altv-example-resources.git"
+    "url": "git+https://github.com/ExXTreMe315/login.git"
   },
   "keywords": [
-    "altmp",
     "altv",
     "node",
     "node-module",
@@ -21,14 +20,11 @@
     "gta",
     "gta5",
     "gtav",
-    "mysql"
+    "mysql",
+    "login"
   ],
-  "author": "altMP Team",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/altmp/altv/issues"
-  },
-  "homepage": "https://github.com/altmp/altv-example-resources#readme",
+  "author": "ExXTreMe",
+  "homepage": "https://github.com/ExXTreMe315/",
   "type": "module",
   "dependencies": {
     "crypto": "^1.0.1",

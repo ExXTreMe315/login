@@ -1,28 +1,33 @@
-# alt:V Simple Freeroam Gamemode
+# alt:V Login System
 
-Simple Freeroam Gamemode for alt:V by [MrNeta](https://github.com/MrNeta)
+Simple Login System for alt:V by [ExXTreMe](https://github.com/ExXTreMe315)
 
 ## Features
 
-- Each player can Spawn two Vehicles
-- Vehicles got removed on Disconnect
-- Different Spawn Points
-- Death Messages
-- Loaded Missing IPLs
+- Login with Username and Password
+- Register with Username and Password
+- Database connection
+- Hashed Passwords in Database
 
-## Commands
+## Installation
 
-| Chat Command         | Description                                              |
-| -------------------- | -------------------------------------------------------- |
-| /help                | Shows a list of Commands                                 |
-| /veh (model)         | Spawns the Specific Vehicle Model (Without the Brackets) |
-| /pos                 | Prints the current Player Position                       |
-| /tp (targetPlayer)   | Teleport to specific players                             |
-| /model (modelName)   | Change Player Model                                      |
-| /weapon (weaponName) | Give specified Weapon                                    |
-| /weapons             | Give all Weapons                                         |
+1. Drag and drop the folder in your server resources folder
+2. Add the resource to your "server.cfg"
+3. Remove your old spawnsystem
+4. add a userdata table to your database that contains "username" and "password"
+5. Set up the Database at "./server/index.js:8"
+    ```js
+        const db = mysql.createConnection({
+        host     : "localhost",
+        user     : "root",
+        password : "",
+        database : "userdata"
+        });
+    ```
+    replace the strings with your Database infos
 
-## Dependencies
+## Configurables
 
-- Chat Resource | [GitHub](https://github.com/altmp/chat)
-- Node-Module
+You are able to configure:
+- the spawn point ("./server/index.js:48")
+- the spawn model ("./server/index.js:49")
